@@ -18,6 +18,19 @@
 *  9.setTimeout
 *  10.console
 ## module
-> 前端seajs/requirejs 
+> 前端seajs cmd/requirejs amd
 
-- 命名空间缺点：调用过长，无法避免全局变量
+- 命名空间缺点：调用过长，无法避免命名冲突
+    
+## commonjs规范
+
+- 定义模块
+创建一个js文件
+- 需要一个模块
+require
+- 导出一个模块
+exports / module.exports
+## 模块化的好处
+- 分工协作
+- 高内聚 低耦合
+- 方便重构

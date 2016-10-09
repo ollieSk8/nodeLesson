@@ -70,3 +70,6 @@ console.log(global.a);
 //console.log(process.cwd());//当前工作目录
 process.chdir('../');//更改当前工作目录
 console.log(process.cwd());
+
+
+
