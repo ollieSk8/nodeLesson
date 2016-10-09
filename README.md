@@ -30,6 +30,7 @@
 require
 - 导出一个模块
 exports / module.exports
+
 ## 模块化的好处
 - 分工协作
 - 高内聚 低耦合
@@ -61,26 +62,56 @@ npm init
 ## package.json
 ```
 {
-    "name": "node",
-    "version": "1.0.0",
-    "description": "node学习仓库",
-    "main": "index.js",
-    "scripts": {
-    "test": ""
-},
-    "repository": {
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node学习仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
     "type": "git",
-        "url": "git+https://github.com/ollieSk8/nodeLesson.git"
-},
-    "keywords": [
+    "url": "git+https://github.com/ollieSk8/nodeLesson.git"
+  },
+  "keywords": [
     "node",
     "npm"
-],
-    "author": "ollieSk8",
-    "license": "MIT",
-    "bugs": {
+  ],
+  "author": "ollieSk8",
+  "license": "MIT",
+  "bugs": {
     "url": "https://github.com/ollieSk8/nodeLesson/issues"
-},
-    "homepage": "https://github.com/ollieSk8/nodeLesson#readme"
+  },
+  "homepage": "https://github.com/ollieSk8/nodeLesson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
 }
+
 ```
+## 开发依赖
+- 只在开发时使用
+- 使用gulp会自动在package.json中写入
+```
+npm install gulp --save-dev
+``` 
+## 依赖
+- 上线和开发时都需要
+```
+npm install jquery angular --save
+```
+- 文件会安装在node_modules下
+## 全部安装
+```
+npm install
+```
+## 卸载包
+```
+npm uninstall gulp --save-dev  例如 卸载所有关于gulp的文件
+```
+## 全局安装 -g
+- 不会增加到列表里，并且只是在命令行下使用
