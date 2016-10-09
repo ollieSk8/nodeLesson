@@ -115,3 +115,16 @@ npm uninstall gulp --save-dev  例如 卸载所有关于gulp的文件
 ```
 ## 全局安装 -g
 - 不会增加到列表里，并且只是在命令行下使用
+## 发布包
+- 在https://www.npmjs.com 登录用户 或创建
+```
+npm adduser
+```
+- 发布包
+```
+npm publish
+```
+- 卸载包
+```
+npm unpublish
+``` 
