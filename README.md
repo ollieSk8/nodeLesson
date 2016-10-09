@@ -34,3 +34,12 @@ exports / module.exports
 - 分工协作
 - 高内聚 低耦合
 - 方便重构
+
+如果导出的是引用类型用
+```
+    module.exports=obj;
+```
+如果导出的是基本类型用
+```
+    exports.basis=basis;
+```
