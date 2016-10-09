@@ -6,3 +6,18 @@
 ## 阻塞非阻塞
 阻塞调用是指调用结果返回之前，当前线程会被挂起。调用线程只有在得到结果之后才会返回。
 非阻塞调用指在不能立刻得到结果之前，该调用不会阻塞当前线程。
+## nodejs
+*  1.global 可以自己调用自己
+*  2.process 进程
+*  3.Buffer 缓存区 表示当前使用的内存区
+*  4.clearImmediate
+*  5.clearInterval
+*  6.clearTimeout:
+*  7.setImmediate
+*  8.setInterval
+*  9.setTimeout
+*  10.console
+## module
+> 前端seajs/requirejs 
+
+- 命名空间缺点：调用过长，无法避免全局变量
