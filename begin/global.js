@@ -67,3 +67,6 @@ console.log(global.a);
 
 // console.log(__dirname);//当前文件夹的绝对路径
 // console.log(__filename);//当前文件的名字
+//console.log(process.cwd());//当前工作目录
+process.chdir('../');//更改当前工作目录
+console.log(process.cwd());
