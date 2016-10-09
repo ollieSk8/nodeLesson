@@ -43,3 +43,13 @@ exports / module.exports
 ```
     exports.basis=basis;
 ```
+## require 
+- 多次引用只会加载一次，是同步的
+- node加载同一个模块可以将模块缓存下来，下次加载直接引用
+- require.cache 
+- require.resolve 解析出模块的绝对路径
+```
+delete require.cache[require.resolve('./module.js')];//删除模块对象以路径为key的value
+
+通过缓存将缓存中唯一模块删除
+```
