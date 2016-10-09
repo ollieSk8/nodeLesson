@@ -53,3 +53,34 @@ delete require.cache[require.resolve('./module.js')];//删除模块对象以路�
 
 通过缓存将缓存中唯一模块删除
 ```
+
+## 创建管理依赖文件的package.json
+```
+npm init
+```
+## package.json
+```
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "node学习仓库",
+    "main": "index.js",
+    "scripts": {
+    "test": ""
+},
+    "repository": {
+    "type": "git",
+        "url": "git+https://github.com/ollieSk8/nodeLesson.git"
+},
+    "keywords": [
+    "node",
+    "npm"
+],
+    "author": "ollieSk8",
+    "license": "MIT",
+    "bugs": {
+    "url": "https://github.com/ollieSk8/nodeLesson/issues"
+},
+    "homepage": "https://github.com/ollieSk8/nodeLesson#readme"
+}
+```
