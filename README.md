@@ -128,3 +128,46 @@ npm publish
 ```
 npm unpublish
 ``` 
+- 切换源
+```
+npm install nrm -g
+```
+-  查看所有源
+```
+nrm ls
+
+可以的源
+npm ---- https://registry.npmjs.org/
+cnpm --- http://r.cnpmjs.org/
+taobao - https://registry.npm.taobao.org/
+nj ----- https://registry.nodejitsu.com/
+rednpm - http://registry.mirror.cqupt.edu.cn/
+npmMirror  https://skimdb.npmjs.com/registry/
+edunpm - http://registry.enpmjs.org/
+```
+-  使用源
+```
+nrm use taobao
+```
+- 模块的查找机制
+```
+//第三方模块
+//我们引入第三模块是不要路径的./直接引用模块的名字
+var mime = require('mime');//会自动搜索package.json里的main属性 mine.js
+//自己写的模块 要注意
+//当我们安装一个模块会就近安装 找最近目录一直往上找，知道找到node_modules文件夹，如果找不到在自己的目录下创建
+console.log(module.paths);//模块的查找路径
+
+var jwpack = require('jwpack');
+console.log(jwpack);
+//先查找第三方模块中的index.js  index.json 之后在查找对应main的字段
+
+
+//第三方查找规则
+//1.先查找模块的名字,找不到往上找，找到跟目录
+//2.查找index.js index.json
+//3.如果没有index 会找package.json里的main字段
+//我们的文件模块不用指定后缀名默认会自动添加.js后缀，如果找不到在添加.json后缀
+
+//文件 ./  第三方 需要安装 内置 直接使用
+```
