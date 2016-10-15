@@ -1,0 +1,30 @@
+{
+  "name": "nodelesson",
+  "version": "1.0.1",
+  "description": "node学习仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollieSk8/nodeLesson.git"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "ollieSk8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ollieSk8/nodeLesson/issues"
+  },
+  "homepage": "https://github.com/ollieSk8/nodeLesson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
+}
